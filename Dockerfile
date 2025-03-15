@@ -29,7 +29,7 @@ COPY --from=build /app/database.sqlite database.sqlite
 
 ENV NODE_ENV=production
 ENV DATABASE_URL=file:./database.sqlite
-EXPOSE 3000
+EXPOSE 7000
 
 CMD ["npm", "start"]
 
